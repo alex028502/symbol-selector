@@ -1,0 +1,8 @@
+Package: symbol-selector
+Name: Symbol Selector
+Description: Symbol Selector
+Maintainer: Not Maintained
+Version: { VERSION }
+Recommends: xdotool
+Suggests: emacs
+Architecture: all

@@ -1,0 +1,23 @@
+name: check and build
+on: push
+jobs:
+  main-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Get Short Git Hash
+        shell: bash
+        run: echo "sha_short=$(git rev-parse --short "$GITHUB_SHA")" >> "$GITHUB_ENV"
+        # thanks https://stackoverflow.com/a/61699863
+      - name: format
+        run: make format
+      - name: build
+        run: GIT_HASH=${{ env.sha_short }} make
+      - name: move file
+        run: mv symbol-selector.deb symbol-selector-${{ env.sha_short }}.deb
+      - name: Upload .deb as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: symbol-selector
+          path: ./symbol-selector-${{ env.sha_short }}.deb
