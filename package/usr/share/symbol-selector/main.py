@@ -91,10 +91,10 @@ class SelectorWindow(Gtk.Window):
         if self.search_timer_id:
             GLib.source_remove(self.search_timer_id)
         self.search_timer_id = GLib.timeout_add(
-            0.2, partial(self.delayed_search, entry)
+            0.2, partial(self.search, entry)
         )
 
-    def delayed_search(self, entry):
+    def search(self, entry):
         search_text = entry.get_text().upper()
         if search_text in self.search_text:
             self.items = self.narrow_down(self.items, search_text)
