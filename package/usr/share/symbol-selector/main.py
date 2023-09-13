@@ -152,6 +152,8 @@ def check_for_terms(terms, text):
     for term in terms:
         if term not in text:
             return False
+        if len(term) == 1 and term not in text.split():
+            return False
     return True
 
 
