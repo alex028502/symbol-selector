@@ -1,5 +1,6 @@
 import subprocess
 from functools import partial
+import threading
 import os
 import gi
 from collections import Counter
@@ -29,6 +30,10 @@ class SelectorWindow(Gtk.Window):
             weighted_history += weighted_history[-(base**o) :]
 
         self.history = dict(Counter(weighted_history))
+
+        self.search_timer_id = None
+        self.search_thread = None
+        self.search_lock = threading.Lock()
 
         process = subprocess.Popen(
             ["emacs", "-Q", "--batch", "--script", "%s/symbols.el" % __dir__],
@@ -88,21 +93,20 @@ class SelectorWindow(Gtk.Window):
         )
 
     def on_search_changed(self, entry):
-        if self.search_timer_id:
-            GLib.source_remove(self.search_timer_id)
-        self.search_timer_id = GLib.timeout_add(
-            0.2, partial(self.search, entry)
-        )
+        if self.search_thread and self.search_thread.is_alive():
+            self.search_thread.cancel()
+
+        self.search_thread = threading.Thread(target=self.search, args=(entry,))
+        self.search_thread.start()
 
     def search(self, entry):
         search_text = entry.get_text().upper()
-        if search_text in self.search_text:
-            self.items = self.narrow_down(self.items, search_text)
-        else:
-            self.items = self.narrow_down(self.all_items, search_text)
-
-        self.search_text = search_text
-        self.update()
+        items = self.narrow_down(self.all_items, search_text)
+        # narrow_down is a long running operation that could be cancelled so
+        # don't risk updating self.items until it completes
+        # I don't know at what point the assignment happens
+        self.items = items
+        GLib.idle_add(self.update)
 
     def update(self):
         for child in self.listbox.get_children():
