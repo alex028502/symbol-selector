@@ -1,4 +1,4 @@
-# Stress Free Unicode
+# a stress free way to type special characters
 
 Until recently, every time I had to write café, or 10°C, or El Niño, or
 jalapeño, or 220Ω, 100μsec, or Paweł, or π, I felt slightly stressed, and
@@ -18,7 +18,7 @@ Now if I need a symbol, I press `F9` and I just type in the name of the symbol
 I want, or select it from my recently used symbols using the mouse or arrow
 keys.
 
-![close up of dropdown](pics/closeup.jpg)
+![close-up of dropdown](pics/closeup.jpg)
 
 <small>
 	sorry I couldn't figure out how to take a screenshot of it. the menu closes
