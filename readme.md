@@ -35,9 +35,10 @@ unicode symbols, and puts your recent selections at the top. I worked out some
 
 ### Technical stuff
 
-I just layed out this repo in the `.deb` format so make packaging easier to get
-it onto all my computers. So everything interesting is
-[here](package/usr/share/symbol-selector/)
+
+Everything interesting is [here](package/usr/share/symbol-selector/). I
+organized the directories in the `.deb` format to make packaging easier. That's
+how I keep it up to date on all my computers.
 
 It gets the list of symbols from emacs, so you have to have emacs
 installed to use it. In emacs you can insert a symbol by name with `C-x 8 RET`.
@@ -61,8 +62,9 @@ symbol selecting experience. I don't know if it works on Wayland.
 ### Installation
 
 Two ways to install it are:
-* download the .deb file from the build and install it. They point a shortcut
-at `python3 /usr/share/symbol-selector/main.py`. I used F9.
+* download the .deb file from the latest github actions build and install it.
+(there are no released). Then point a shortcut at
+`python3 /usr/share/symbol-selector/main.py`. I used F9.
 * clone the repo and point a keyboard shortcut at
 `python3 /path/to/symbol-selector/package/usr/share/symbol-selector/main.py`.
 You might have to figure out some dependencies.
