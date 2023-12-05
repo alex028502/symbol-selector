@@ -1,4 +1,4 @@
-# tool for typing special characters stress-free
+# tool for typing special characters hassle-free
 
 Until recently, every time I had to write café, or 10°C, or El Niño, or
 jalapeño, or 220Ω, 100μsec, or Paweł, or π, I felt slightly stressed, and
