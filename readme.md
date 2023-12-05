@@ -41,11 +41,12 @@ organized the directories in the `.deb` format to make packaging easier. That's
 how I keep it up to date on all my computers.
 
 It gets the list of symbols from emacs, so you have to have emacs
-installed to use it. In emacs you can insert a symbol by name with `C-x 8 RET`.
+installed to use it.
 
-I still use the built-in emacs way when using emacs since xdotool seems to have
-trouble inserting certain characters into emacs. Try this and tell me if you
-have the same issue:
+In emacs you can insert a symbol by name with `C-x 8 RET`. I still use the
+built-in emacs way when using emacs since xdotool seems to have trouble
+inserting certain characters into emacs. Try this and tell me if you have the
+same issue:
 
 ```
 sleep 5 && xdotool type 'é°'
