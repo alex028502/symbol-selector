@@ -17,7 +17,7 @@ of whatever we did before.
 Now if I need a symbol, I press `F9` and I just type in the name of the symbol
 I want, or select it from my recently use symbols using the mouse or arrow keys.
 
-![close up of dropdown](pics/closeup.jpg)
+![close up of dropdown](pics/closeup.jpeg)
 
 <small>
 	sorry I couldn't figure out how to take a screenshot of it. the menu closes
