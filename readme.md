@@ -28,7 +28,8 @@ keys.
 ![search for integral sing](pics/search.jpeg)
 
 It's just a dropdown that covers your whole screen, and lets you search all the
-unicode symbols, and puts your recent selections at the top.
+unicode symbols, and puts your recent selections at the top. I worked out some
+"heuristics" by trial and error for the autocomplete and ordering.
 
 ### Technical stuff
 
