@@ -2,7 +2,7 @@
 
 Until recently, every time I had to write café, or 10°C, or El Niño, or
 jalapeño, or 220Ω, 100μsec, or Paweł, or π, I felt slightly stressed, and
-usually went to wikipedia or something copy copy and paste the symbol I needed.
+usually went to wikipedia or something to copy and paste the symbol I needed.
 
 I don't use any of these symbols enough to memorize one of those keycodes, or
 combinations, or remap my keyboard, but I use all of them enough to need a
@@ -72,7 +72,10 @@ you are comfortable with what is in the package. Or you might just want to
 steel the idea and make your own.  Or if there is already a much more practical
 way to accomplish this, please let me know because I couldn't find anything.
 
+##### One more thing
 
-
-
-
+Even in emacs and tmux, I don't memorize key combinations unless it is something
+I do all the time. I am happy typing in `:break-pane`, or `M-x eval-region`,
+even `M-x magit-status`. It don't start to configure key combinations until I
+am really annoyed by a single command. So extending this attitude to characters
+is natural for me.
