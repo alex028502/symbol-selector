@@ -64,7 +64,7 @@ symbol selecting experience. I don't know if it works on Wayland.
 
 Two ways to install it are:
 * download the .deb file from the latest github actions build and install it.
-(there are no released). Then point a shortcut at
+(there are no releases). Then point a keyboard shortcut at
 `python3 /usr/share/symbol-selector/main.py`. I used F9.
 * clone the repo and point a keyboard shortcut at
 `python3 /path/to/symbol-selector/package/usr/share/symbol-selector/main.py`.
@@ -76,7 +76,7 @@ If you are going for the second option, I recommend reading through the source
 code first, and making sure it's nothing dodgy. If you are going for the
 former option, I think you should read through github actions and make sure
 you are comfortable with what is in the package. Or you might just want to
-steel the idea and make your own.  Or if there is already a much more practical
+steal the idea and make your own.  Or if there is already a much more practical
 way to accomplish this, please let me know because I couldn't find anything.
 
 ##### One more thing
