@@ -3,8 +3,8 @@
 Until recently, every time I had to write café, or 10°C, or El Niño, or
 jalapeño, or 220Ω, 100μsec, or Paweł, or π, I felt slightly stressed, and
 usually went to wikipedia or something to copy and paste the symbol I needed.
-Or I wasted brainpower thinking of ways to avoid it - 10degC, 10C, jalepeno,
-220ohm, 100usec, L-knee-neo - you know them all.
+Or I wasted brainpower thinking of ways to avoid it - 10degC, 10C, 10oC,
+jalepeno, 220ohm, 100usec, L-KNEE-KNEE-OH - you know them all.
 
 I don't use any of these symbols enough to memorize one of those keycodes, or
 combinations, or remap my keyboard, but I use all of them enough to need a
