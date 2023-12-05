@@ -1,4 +1,4 @@
-# Symbol Selector
+# Stress Free Unicode
 
 Until recently, every time I had to write café, or 10°C, or El Niño, or
 jalapeño, or 220Ω, 100μsec, or Paweł, or π, I felt slightly stressed, and
